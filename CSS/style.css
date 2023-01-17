@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;;
+}
+
+.hero{
+    background:#1d2026 ;
+    min-height: 100vh;
+    width: 100%;
+    color: #fff;
+    position: relative;
+}
+nav{
+    display: flex;
+    align-items: center;
+    padding: 20px 8px;
+}
+nav .menu-img{
+    width: 25px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+nav .logo{
+    width: 160px;
+    cursor: pointer;
+}
+
+nav ul{
+   flex: 1; 
+   text-align: center;
+}
+
+nav ul li{
+    display: inline-block;    ;
+    list-style: none;
+    margin: 0 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+button{
+    background: #efefef;
+    height: 28px;
+    width: 60px;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    transition: background 0.5s;
+}
+button span{
+    display: block;
+    background: #999;
+    height: 26px;
+    width: 26px;
+    margin: 1px 0;
+    margin-left: 2px;
+    border-radius: 50%;
+    transition: background 0.5s , margin-left 0.5s;
+}
+
+.lamp-container{
+    position: absolute;
+    top: -20px;
+    left: 22%;
+    width: 200px;
+
+}
+
+.lamp{
+    width: 100%;
+}
+
+.light{
+    position: absolute;
+    top: 97%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 700px;
+    margin-left: -10px;
+    opacity: 0;
+    transition: opacity 0.5s;
+
+}
+
+.text-continer{
+    max-width: 600px;
+    margin-top: 7%;
+    margin-left: 50%;
+}
+
+.text-continer h1{
+
+    font-size: 80px;
+    font-weight: 600;
+    
+
+}
+
+.text-continer p{
+    margin-top: 15px;
+}
+
+.text-continer a{
+    text-decoration: none;
+    background:rgb(0, 152, 111, 1);
+    display: inline-block;
+    padding: 14px 40px;
+    margin-top: 30px;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 30px;
+}
+
+.text-continer a:hover{
+    background: rgba(0, 152, 111, 0.5);
+}
+
+
+.control{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 150px;
+}
+
+.control .line{
+    width: 250px;
+    height: 4px;
+    background: #fff;
+    margin: 0 20px;
+    margin-top: 15px;
+    border-radius: 2px;
+}
+
+.control .line span{
+    width: 50%;
+    height: 8px;
+    background:rgb(0, 152, 111, 1) ;
+    margin-top: -2px;
+    border-radius: 4px;
+    display: block;
+}
+
+.active{
+    background:rgb(0, 152, 111, 1) ;
+}
+
+.active span{
+    background: #fff;
+    margin-left: 31px;
+}
+
+.on{
+    opacity: 1;
+}
